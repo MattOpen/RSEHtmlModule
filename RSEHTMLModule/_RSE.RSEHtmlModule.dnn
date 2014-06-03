@@ -1,0 +1,57 @@
+﻿<dotnetnuke type="Package" version="5.0">
+  <packages><package name="RSE.RSEHtmlModule" type="Module" version="1.0.0">
+  <friendlyName>RSE Html Module</friendlyName>
+  <description>RSE Html Module</description>
+  <iconFile />
+  <owner>
+    <name />
+    <organization>mattopen</organization>
+    <url>www.mattopen.com</url>
+    <email>info@mattopen.com</email>
+  </owner>
+  <license>Die Lizenz für dieses Paket ist derzeit nicht enthalten, bitte wenden Sie sich an den Hersteller für die Lizenzdetails.</license>
+  <releaseNotes />
+  <components>
+    <component type="Module">
+      <desktopModule>
+        <moduleName>RSE.RSEHtmlModule</moduleName>
+        <foldername>RSE/RSEHtmlModule</foldername>
+        <businessControllerClass />
+        <supportedFeatures />
+        <moduleDefinitions>
+          <moduleDefinition>
+            <friendlyName>RSE Html Module</friendlyName>
+            <definitionName>RSEHtmlModule</definitionName>
+            <defaultCacheTime>0</defaultCacheTime>
+            <moduleControls>
+              <moduleControl>
+                <controlKey />
+                <controlSrc>DesktopModules/RSE/RSEHtmlModule/HtmlModule.ascx</controlSrc>
+                <supportsPartialRendering>False</supportsPartialRendering>
+                <controlTitle />
+                <controlType>View</controlType>
+                <iconFile />
+                <helpUrl />
+                <supportsPopUps>False</supportsPopUps>
+                <viewOrder>0</viewOrder>
+              </moduleControl>
+            </moduleControls>
+          </moduleDefinition>
+        </moduleDefinitions>
+      </desktopModule>
+    </component>
+    <component type="File">
+      <files>
+        <basePath>DesktopModules\RSE\RSEHtmlModule</basePath>
+        <file>
+          <path>App_LocalResources</path>
+          <name>PackageCreator.ascx.resx</name>
+        </file>
+        <file>
+          <name>HtmlModule.ascx</name>
+        </file>
+      </files>
+    </component>
+  </components>
+</package></packages>
+</dotnetnuke>
