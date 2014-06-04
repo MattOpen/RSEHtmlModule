@@ -1,8 +1,7 @@
 <%@ Control Language="vb" AutoEventWireup="false" Inherits="r2i.OWS.Wrapper.DNN.Module" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
 <%@ Register Assembly="r2i.OWS.Wrapper.DotNetNuke" Namespace="r2i.OWS.Wrapper.DNN" TagPrefix="cc1" %>
 
-<cc1:OpenControl id="ows" ConfigurationID="13997432-0996-599d-ce55-cf93df18fdb8" runat="server">
-</cc1:OpenControl>
+<cc1:OpenControl id="ows" ConfigurationID="13997432-0996-599d-ce55-cf93df18fdb8" runat="server"></cc1:OpenControl>
 
 <link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
 
@@ -17,6 +16,7 @@
  * This is a non-intrusive add-on for OWS.  It allows the "queueing" of OWS.Fetch calls - multiple Fetch
  * calls can be made back-to-back and each will be executed one at a time.
  */
+
 (function(){
     // remember the original OWS methods
     var orig_Fetch = ows.Fetch,
