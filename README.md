@@ -5,6 +5,27 @@ RSEHtmlModuleDNN is a DNN html module with content localization, based on Open W
 ##Features
 
 
+##Installation
+For those who are familiar with OWS
+* OWS:    from folder \OWS\... install configuration "RSEHtmlModule ows configuration.config" into ows.
+* MSSQL:  from folder \SQL\...  create table, view and proc.
+    prepare initial script: open "sql initialscript insert some default values.sql" with texteditor and  prepare these lines to your needs.
+
+    declare @PortalID int = '22'    -your PortalID
+    declare @externDB nvarchar(100) = 'mydnn.dbo.'	--name of secondary database. If you use DNN-DB, then value = 'dbo.'
+    declare @externnameDB nvarchar(100) = 'mydnn'   --name of secondary database. If you use DNN-DB, then value = ''
+    declare @MasterLanguage nvarchar(100) = 'de-DE'		--preferred locale for new items
+
+    execute initial script
+* install module "_RSE.RSEHtmlModule_01.00.00_Install.zip" to dnn
+* install bootstrap 3.x to your skin
+  <script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="<%= PortalSettings.HomeDirectory %>bootstrap/css/bootstrap.min.css" />
+* map "RSEHtmlModule.css" to your skin <link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
+* install ckeditor for dnn
+
+take a look at example skin, how to use css and js.
+
 ##Dependencies
 * DNN evoq content (formerly DotNetNUke) http://www.dnnsoftware.com/
 * OpenWebStudio (ows) for DNN http://www.openwebstudio.com/
