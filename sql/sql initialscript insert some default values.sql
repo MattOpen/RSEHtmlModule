@@ -1,7 +1,7 @@
 --	execute to DNN database
-declare @PortalID int = '22'
-declare @externDB nvarchar(100) = 'exponde.dbo.'	--name of secondary database. If you use DNN-DB, then value = 'dbo.'
-declare @externnameDB nvarchar(100) = 'exponde'
+declare @PortalID int = '22'    -your DNN Portal ID
+declare @externDB nvarchar(100) = 'mydb.dbo.'	--name of secondary database. If you use DNN-DB, then value = 'dbo.'
+declare @externnameDB nvarchar(100) = 'mydb'    --name of secondary database. If you use DNN-DB, then value = ''
 declare @MasterLanguage nvarchar(100) = 'de-DE'		--preferred locale for new items
 
 
@@ -39,7 +39,7 @@ INSERT INTO [dbo].[RSEModuleSettings]
            ,'1'
            ,@PortalID
            ,'externnameDB'
-           ,'exponde'
+           ,'mydb'
            ,NULL
            ,'en-US')
 
