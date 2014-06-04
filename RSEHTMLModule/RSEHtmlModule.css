@@ -128,6 +128,9 @@ input.switch:checked ~ label:before {
 input.switch:checked ~ label:after{
     margin-left: 2.1em;
 }
+input[type="text"], select, textarea, input[type="email"], input[type="search"], input[type="password"] {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
 /* ******               STYLES				               ******* */
 
 
@@ -304,6 +307,16 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
 .templateTopPane .tab-content{
     margin-top:20px;
 }
+.popover-menu {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #EBEBEB;
+    border-radius: 5px 5px 0 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    margin: -20px -20px 20px -20px;
+    padding: 8px 14px;
+}
 #templateContentPane {
     max-height: 800px;
     overflow: auto;
@@ -354,5 +367,11 @@ hr{margin-top:10px;padding-top:5px;}
     margin: auto;
     width: 23px;
 }
+.left {
+    float: left;
+}
 
+.right {
+    float: right;
+}
 /*-----------------------	HELPERCLASS  ----------------------------------------*/
