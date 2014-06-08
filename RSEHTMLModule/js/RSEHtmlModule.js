@@ -1,5 +1,5 @@
 /*
- * Created by www.exponde.com, Richard Sedellke
+ * Created by www.mattopen.com
  * Date:	02.05.2014
  * DNN RSEModules
  */

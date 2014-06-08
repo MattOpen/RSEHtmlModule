@@ -1,7 +1,7 @@
 <%@ Control Language="vb" AutoEventWireup="false" Inherits="r2i.OWS.Wrapper.DNN.Module" TargetSchema="http://schemas.microsoft.com/intellisense/ie5" %>
 <%@ Register Assembly="r2i.OWS.Wrapper.DotNetNuke" Namespace="r2i.OWS.Wrapper.DNN" TagPrefix="cc1" %>
 
-<cc1:OpenControl id="ows" ConfigurationID="13997432-0996-599d-ce55-cf93df18fdb8" runat="server"></cc1:OpenControl>
+<cc1:OpenControl id="ows" resourcekey="Module.Text" runat="server"></cc1:OpenControl>
 
 <link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
 
