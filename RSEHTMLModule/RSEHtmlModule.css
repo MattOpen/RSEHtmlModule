@@ -169,14 +169,17 @@ img {
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-    background-color: #A4D216;
-    border-color: #77A502;
+   /* background-color: #A4D216;
+    border-color: #77A502;*/
     color: #FFFFFF;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background-color: #0097CF;
     color: #FFFFFF;
     text-decoration: none;
+}
+.glyphicon {
+  margin: 3px;
 }
 /* ******               BOOTSTRAP OVERRIDES               ******* */
 
@@ -205,9 +208,24 @@ img {
 }
 /*	Messageboxen		*/
 #messagebox{float: left;padding: 10px;position: relative;width: 100%;font-size:1.1em;}
+#messagebox2{float: left;position: relative;width: 100%;}
 .messagebox {background-color: #F5F5F5;padding:5px;margin:10px 0px;border: 1px solid #DBDBDB;}
 .errorbox {color:#000;background-color:#ffeded;padding:5px;margin:10px 0px;border:1px solid #f27c7c;}
 .confirmbox {background-color:#F2FFDB;color:#151515;border:1px solid #9C6;width:100%;padding:5px;display:block;}
+.confirmbox_blue {
+  background-color: #0097CF;
+  border: 1px solid #0097CF;
+  box-shadow: 0 3px 3px 0 #777777;
+  color: #FFFFFF;
+  display: block;
+  font-size: 1.6em !important;
+  font-weight: 700;
+  min-height: 60px;
+  padding: 20px;
+  position: fixed !important;
+  top: 0;
+  z-index: 9000;
+}
 .redcolor{color:#BC3317!Important;Font-weight:bold;}
 .headerrow{min-height:45px;}
 .thumbnails > li {
@@ -374,4 +392,5 @@ hr{margin-top:10px;padding-top:5px;}
 .right {
     float: right;
 }
+.messageContainer{}
 /*-----------------------	HELPERCLASS  ----------------------------------------*/

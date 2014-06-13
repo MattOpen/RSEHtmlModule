@@ -1,16 +1,32 @@
 /*
  * Created by www.mattopen.com
- * Date:	02.05.2014
+ * Date:	15.06.2014
  * DNN RSEModules
  */
 //-----------------------------------------------------------------------------------------------------
 //  RSEModules
 //-----------------------------------------------------------------------------------------------------
-//Message Funktion after action
+//Message function after action
 function messagebox(message) {
-    $('#messagebox').removeClass().addClass('confirmbox').text("Hinweis: "+message).fadeIn(1000).fadeOut(3000);
+    $('#messagebox').removeClass().addClass('confirmbox').text("Message: "+message).fadeIn(1000).fadeOut(3000);
 }
-
+function messagebox2(elem, message) {
+	var messageboxelem = '<div id="messagebox2">&nbsp;</div>';
+	$('#'+elem).append(messageboxelem);
+	$('#messagebox2').removeClass().addClass('confirmbox_blue').text("Message: "+message).fadeIn(1000);
+	setTimeout(function() {
+		$('#messagebox2').fadeOut(2000).remove();
+				},5000);
+}
+function prepareMessagebox(){
+	if ($('#headermessageContainer').length)
+		{
+			//console.log('da');
+		}else{
+			var preparemessageboxelem = '<div id="headermessageContainer">&nbsp;</div>'; 
+			$('Body').after(preparemessageboxelem);
+		}
+}
 //------------------------------------------------------------------------------------------
 function styleEditBox2(param) {
     if ($(param) == 'tt') {
@@ -42,6 +58,10 @@ function closeckeditor() {
     for ( instance in CKEDITOR.instances ) CKEDITOR.instances[instance].updateElement();
     for ( instance in CKEDITOR.instances ) CKEDITOR.remove(CKEDITOR.instances[instance]);
     for ( instance in CKEDITOR.instances ) CKEDITOR.instances[instance].destroy();
+}
+//-----------------------------------------------------------------------------------------------------
+function updateckeditor() {
+    for ( instance in CKEDITOR.instances ) CKEDITOR.instances[instance].updateElement();
 }
 //------------------------------------------------------------------------------------------
 $(window).resize(function() {
@@ -75,6 +95,12 @@ function validateCheckBox() {
         $elem.val('0');
     }
 }
+//------------------------------------------------------------------------------------------
+
+
+$(document).ready(function () {
+	prepareMessagebox();
+});
 //-----------------------------------------------------------------------------------------------------
 //  RSEModules
 //-----------------------------------------------------------------------------------------------------

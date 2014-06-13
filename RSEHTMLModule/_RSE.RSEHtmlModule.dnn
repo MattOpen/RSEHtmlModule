@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="RSE.RSEHtmlModule" type="Module" version="1.0.1">
+  <packages><package name="RSE.RSEHtmlModule" type="Module" version="1.0.2">
   <friendlyName>RSE Html Module</friendlyName>
   <description>RSE Html Module</description>
   <iconFile />
@@ -12,6 +12,15 @@
   <license>Die Lizenz für dieses Paket ist derzeit nicht enthalten, bitte wenden Sie sich an den Hersteller für die Lizenzdetails.</license>
   <releaseNotes>Das Paket verfügt über keine Versiionsinformationen</releaseNotes>
   <components>
+    <component type="Script">
+      <scripts>
+        <basePath>DesktopModules\RSE\RSEHtmlModule</basePath>
+        <script type="Install">
+          <name>01.00.02.SqlDataProvider</name>
+          <version>01.00.02</version>
+        </script>
+      </scripts>
+    </component>
     <component type="Module">
       <desktopModule>
         <moduleName>RSE.RSEHtmlModule</moduleName>
@@ -44,6 +53,10 @@
       <files>
         <basePath>DesktopModules\RSE\RSEHtmlModule</basePath>
         <file>
+          <path>App_LocalResources</path>
+          <name>View.ascx.resx</name>
+        </file>
+        <file>
           <path>js</path>
           <name>ckeditor_config.js</name>
         </file>
@@ -52,10 +65,10 @@
           <name>RSEHtmlModule.js</name>
         </file>
         <file>
-          <name>View.ascx</name>
+          <name>RSEHtmlModule.css</name>
         </file>
         <file>
-          <name>RSEHtmlModule.css</name>
+          <name>View.ascx</name>
         </file>
       </files>
     </component>
