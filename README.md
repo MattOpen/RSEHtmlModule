@@ -1,6 +1,6 @@
 #Multi language html content module for dnn  (BETA)
 RSEHtmlModuleDNN is a DNN html module with content localization, based on Open Web Studio and DotNetNuke 7 - MIT licensed. (BETA) not for production use.
-
+[download module now](https://github.com/MattOpen/RSEHtmlModule/blob/master/install/RSEHtmlModule_unzip_first.zip)
 
 ##Features
 
