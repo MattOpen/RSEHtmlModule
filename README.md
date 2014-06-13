@@ -6,9 +6,7 @@ RSEHtmlModuleDNN is a DNN html module with content localization, based on Open W
 
 
 ##Installation
-For those who are familiar with OWS
-* OWS:    from folder \OWS\... install configuration "RSEHtmlModule ows configuration.config" into ows.
-* MSSQL:  from folder \SQL\...  create table, view and proc.
+* MSSQL:  
     prepare initial script: open "sql initialscript insert some default values.sql" with texteditor and  prepare these lines to your needs.
 
     declare @PortalID int = '22'    -your PortalID
@@ -17,7 +15,7 @@ For those who are familiar with OWS
     declare @MasterLanguage nvarchar(100) = 'de-DE'		--preferred locale for new items
 
     execute initial script
-* install module "_RSE.RSEHtmlModule_01.00.00_Install.zip" to dnn
+* install module "_RSE.RSEHtmlModule_01.xx.x_Install.zip" to dnn
 * install bootstrap 3.x to your skin
   <script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
   <link rel="stylesheet" type="text/css" href="<%= PortalSettings.HomeDirectory %>bootstrap/css/bootstrap.min.css" />
@@ -28,7 +26,7 @@ take a look at example skin, how to use css and js.
 
 ##Dependencies
 * DNN evoq content (formerly DotNetNUke) http://www.dnnsoftware.com/
-* OpenWebStudio (ows) for DNN http://www.openwebstudio.com/
+* build with OpenWebStudio (ows) for DNN http://www.openwebstudio.com/
 * Bootstrap 3.x http://getbootstrap.com/
 * CKEditor https://dnnckeditor.codeplex.com/
 * require jQuery, 1.7 or higher
@@ -46,7 +44,7 @@ We actively encourage you to upgrade this module and provide pull requests to sh
 
 
 ##Roadmap
-* make it an installable package
+* make it an installable package - done
 
 ##Example websites, build with 
 * http://www.duritcast.de
