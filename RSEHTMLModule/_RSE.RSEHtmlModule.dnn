@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="RSE.RSEHtmlModule" type="Module" version="1.0.2">
+  <packages><package name="RSE.RSEHtmlModule" type="Module" version="1.0.4">
   <friendlyName>RSE Html Module</friendlyName>
   <description>RSE Html Module</description>
   <iconFile />
@@ -16,8 +16,20 @@
       <scripts>
         <basePath>DesktopModules\RSE\RSEHtmlModule</basePath>
         <script type="Install">
+          <name>01.00.01.SqlDataProvider</name>
+          <version>01.00.01</version>
+        </script>
+        <script type="Install">
           <name>01.00.02.SqlDataProvider</name>
           <version>01.00.02</version>
+        </script>
+        <script type="Install">
+          <name>01.00.04.SqlDataProvider</name>
+          <version>01.00.04</version>
+        </script>
+        <script type="UnInstall">
+          <name>Uninstall.SqlDataProvider</name>
+          <version>1.0.4</version>
         </script>
       </scripts>
     </component>

@@ -5,7 +5,7 @@
  
 CKEDITOR.editorConfig = function( config )
 {
-	config.toolbar = 'Full';
+	config.toolbar = 'Medium';
     config.maximizedToolbar = 'Full';
     config.allowedContent = true;   //show an allow javascript code in editor
     config.extraPlugins = 'mathjax,qrcodes,oembed,syntaxhighlight';     //load additional plugins - must be installed before
@@ -33,6 +33,8 @@ CKEDITOR.editorConfig = function( config )
         { name: 'document', items : [ 'Source','-','DocProps','Preview','Print','-','Templates' ] },
         { name: 'clipboard', items : [ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ] },
         { name: 'editing', items : [ 'Find','Replace','-','SelectAll','-','SpellChecker', 'Scayt' ] },
+		{ name: 'forms', items : [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 
+        'HiddenField' ] },
         { name: 'insert', items : [ 'Image','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe' ] },
         '/',
         { name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
