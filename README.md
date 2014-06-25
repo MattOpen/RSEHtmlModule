@@ -7,15 +7,6 @@ RSEHtmlModuleDNN is a DNN html module with content localization, based on Open W
 
 
 ##Installation
-* MSSQL:  
-    prepare initial script: open "sql initialscript insert some default values.sql" with texteditor and  prepare these lines to your needs.
-
-    declare @PortalID int = '22'    -your PortalID
-    declare @externDB nvarchar(100) = 'mydnn.dbo.'	--name of secondary database. If you use DNN-DB, then value = 'dbo.'
-    declare @externnameDB nvarchar(100) = 'mydnn'   --name of secondary database. If you use DNN-DB, then value = ''
-    declare @MasterLanguage nvarchar(100) = 'de-DE'		--preferred locale for new items
-
-    execute initial script
 * install module "_RSE.RSEHtmlModule_01.xx.x_Install.zip" to dnn
 * install bootstrap 3.x to your skin
   <script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
