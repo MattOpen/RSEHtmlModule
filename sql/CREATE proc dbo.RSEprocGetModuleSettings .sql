@@ -1,12 +1,8 @@
-/****** Object:  StoredProcedure [dbo].[RSEprocGetModuleSettings]    Script Date: 06/03/2014 13:05:05 ******/
+/****** Object:  StoredProcedure [dbo].[RSEprocGetModuleSettings]    Script Date: 06/25/2014 19:09:07 ******/
 SET ANSI_NULLS ON
 GO
-
 SET QUOTED_IDENTIFIER ON
 GO
-
-
-
 CREATE proc [dbo].[RSEprocGetModuleSettings] 
 (	
 	@UserID as NVARCHAR(MAX), 
@@ -19,6 +15,78 @@ BEGIN
 *	liefert Standardwerte
 *	use:	execute [dbo].[RSEprocGetModuleSettings] @UserID=1, @PortalID=20
 *****/
+-- initial check
+
+if 0 in (select top 1 PortalID from dbo.RSEModuleSettings where PortalID = 0)
+goto getvalues
+
+declare @externDB nvarchar(100) = 'dbo.'	--default value 'dbo.', if you use an other DB, then value = 'mydb.dbo.' where mydb is other db name.
+declare @externnameDB nvarchar(100) = ''    --default value '', if you use an other DB, then value = 'mydb' where mydb is other db name.
+declare @MasterLanguage nvarchar(100) = 'en-US'		--default value 'en-US', preferred locale for new items
+
+
+INSERT INTO [dbo].[RSEModuleSettings]
+           ([IPAddress]
+           ,[CreatedByUserID]
+           ,[LastModifiedByUserID]
+           ,[PortalID]
+           ,[SettingName]
+           ,[SettingValue]
+           ,[SettingDescription]
+           ,[CultureCode])
+     VALUES
+           (NULL
+           ,'1'
+           ,'1'
+           ,@PortalID
+           ,'externDB'
+           ,@externDB
+           ,NULL
+           ,'en-US')
+
+INSERT INTO [dbo].[RSEModuleSettings]
+           ([IPAddress]
+           ,[CreatedByUserID]
+           ,[LastModifiedByUserID]
+           ,[PortalID]
+           ,[SettingName]
+           ,[SettingValue]
+           ,[SettingDescription]
+           ,[CultureCode])
+     VALUES
+           (NULL
+           ,'1'
+           ,'1'
+           ,@PortalID
+           ,'externnameDB'
+           ,@externnameDB
+           ,NULL
+           ,'en-US')
+
+INSERT INTO [dbo].[RSEModuleSettings]
+           ([IPAddress]
+           ,[CreatedByUserID]
+           ,[LastModifiedByUserID]
+           ,[PortalID]
+           ,[SettingName]
+           ,[SettingValue]
+           ,[SettingDescription]
+           ,[CultureCode])
+     VALUES
+           (NULL
+           ,'1'
+           ,'1'
+           ,@PortalID
+           ,'MasterLanguage'
+           ,ISNULL(@MasterLanguage,'en-US')
+           ,NULL
+           ,'en-US')
+           
+getvalues:
+
+
+
+
 
 IF @SettingName <> '' GOTO ONEVALUE
 
@@ -83,9 +151,3 @@ execute(@query)
 
 endsave:
 END
-
-
-
-GO
-
-
