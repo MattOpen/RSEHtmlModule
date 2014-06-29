@@ -17,7 +17,7 @@ BEGIN
 *****/
 -- initial check
 
-if 0 in (select top 1 PortalID from dbo.RSEModuleSettings where PortalID = 0)
+if @PortalID in (select top 1 PortalID from dbo.RSEModuleSettings where PortalID = @PortalID)
 goto getvalues
 
 declare @externDB nvarchar(100) = 'dbo.'	--default value 'dbo.', if you use an other DB, then value = 'mydb.dbo.' where mydb is other db name.
