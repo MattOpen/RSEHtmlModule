@@ -18,6 +18,7 @@
  */
 
 (function(){
+if (typeof ows != 'undefined'){
     // remember the original OWS methods
     var orig_Fetch = ows.Fetch,
         orig_FetchEnd = ows.FetchEnd,
@@ -44,6 +45,7 @@
     // augment the standard OWS functions
     ows.Fetch = new_Fetch;
     ows.FetchEnd = new_FetchEnd;
+	}
 })();
 </script>
 <script src="/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js"></script>

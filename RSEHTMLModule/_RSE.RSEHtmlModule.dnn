@@ -1,16 +1,18 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="RSE.RSEHtmlModule" type="Module" version="1.0.4">
+  <packages><package name="RSE.RSEHtmlModule" type="Module" version="1.0.5">
   <friendlyName>RSE Html Module</friendlyName>
-  <description>RSE Html Module</description>
+  <description>RSEHtmlModuleDNN is a DNN html module with content localization, based on Open Web Studio and DotNetNuke 7 - MIT licensed.</description>
   <iconFile />
   <owner>
     <name />
-    <organization>MattOpen</organization>
-    <url>www.mattopen.com</url>
-    <email>matt@mattopen.com</email>
+    <organization>exponde</organization>
+    <url>www.exponde.com</url>
+    <email>info@exponde.de</email>
   </owner>
-  <license>Die Lizenz für dieses Paket ist derzeit nicht enthalten, bitte wenden Sie sich an den Hersteller für die Lizenzdetails.</license>
-  <releaseNotes>Das Paket verfügt über keine Versiionsinformationen</releaseNotes>
+  <license>This plugin and all code contained is Copyright 2014 exponde, Germany. You are granted a license to use this code / software as you wish, free of charge and free of restrictions under the MIT license.
+
+This project is updated and maintained by: MattOpen http://www.mattopen.com</license>
+  <releaseNotes>Das Paket verfügt über keine Versionsinformationen</releaseNotes>
   <components>
     <component type="Script">
       <scripts>
@@ -29,7 +31,7 @@
         </script>
         <script type="UnInstall">
           <name>Uninstall.SqlDataProvider</name>
-          <version>1.0.4</version>
+          <version>1.0.5</version>
         </script>
       </scripts>
     </component>

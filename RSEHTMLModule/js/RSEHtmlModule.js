@@ -1,6 +1,7 @@
 /*
- * Created by www.mattopen.com
- * Date:	15.06.2014
+ * Created by matt www.mattopen.com
+ * Date:				15.06.2014
+ * Last update date:	27.06.2014
  * DNN RSEModules
  */
 //-----------------------------------------------------------------------------------------------------
@@ -32,11 +33,11 @@ function styleEditBox2(param) {
     if ($(param) == 'tt') {
         //elem = 'templateTopPane';
         //$('#'+elem).addClass('editBoxStyle');//.fadeTo("slow", 1.0);
-        console.log('T:'+param)
+        //console.log('T:'+param)
     }else{
         //elem = 'templateTopPane';
         //$('#'+elem).addClass('editBoxStyle');//.fadeTo("slow", 1.0);
-        console.log('O:'+param)
+        //console.log('O:'+param)
     }
 }
 function styleEditBox(elem) {

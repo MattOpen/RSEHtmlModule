@@ -1,50 +1,16 @@
-/****** Object:  StoredProcedure [dbo].[RSEprocSetModuleSettings]    Script Date: 06/24/2014 19:07:45 ******/
+/****** Object:  StoredProcedure [dbo].[RSEprocGetModuleSettings]    Script Date: 06/28/2014 14:48:34 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RSEprocGetModuleSettings]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[RSEprocGetModuleSettings]
+GO
+
+/****** Object:  StoredProcedure [dbo].[RSEprocGetModuleSettings]    Script Date: 06/28/2014 14:48:34 ******/
 SET ANSI_NULLS ON
 GO
+
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE proc [dbo].[RSEprocSetModuleSettings] 
-(	
-	@UserID as INT, 
-	@PortalID as INT,
-	@SettingName as NVARCHAR(50), 
-	@SettingValue as NVARCHAR(100)
-)
-as
-BEGIN
-/*****
-*	setzt Standardwerte
-*	use:	execute [dbo].[RSEprocSetModuleSettings] @UserID=1, @PortalID=20, @SettingName='FocusArticleID' ,@SettingValue='63'
-*****/
-
-
-	if @SettingValue = '0' or @SettingValue = NULL goto endsave
-
-	delete from dbo.RSEUserSettings 
-	where CreatedByUserID = @UserID and PortalID = @PortalID and SettingName = @SettingName
-	
-	Insert into dbo.RSEUserSettings(
-			CreatedByUserID, PortalID, SettingName, SettingValue
-		)
-		values(
-			@UserID, @PortalID, @SettingName, @SettingValue
-		)
-
---	new settings
-execute [dbo].[RSEprocGetModuleSettings] @UserID=@UserID, @PortalID=@PortalID
-
-endsave:
-END
-
-GO
-
-/****** Object:  StoredProcedure [dbo].[RSEprocGetModuleSettings]    Script Date: 06/25/2014 19:09:07 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-ALTER proc [dbo].[RSEprocGetModuleSettings] 
+CREATE proc [dbo].[RSEprocGetModuleSettings] 
 (	
 	@UserID as NVARCHAR(MAX), 
 	@PortalID as NVARCHAR(MAX),
@@ -135,7 +101,7 @@ DECLARE
 	@cols AS NVARCHAR(MAX),
     @query  AS NVARCHAR(MAX);
     
---ENABLE FOR TEST ONLY
+--ENABLE FOR TEST PURPOSES ONLY
 /*declare
     @PortalID as NVARCHAR(MAX),
     @UserID as NVARCHAR(MAX);
@@ -192,4 +158,7 @@ execute(@query)
 
 endsave:
 END
+
 GO
+
+
