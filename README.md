@@ -43,7 +43,7 @@ We actively encourage you to upgrade this module and provide pull requests to sh
 * http://www.duritsteel.de
 
 #License
-This plugin and all code contained is Copyright 2014 MattOpen, Germany. You are granted a license to use this code / software as you wish, free of charge and free of restrictions under the MIT license. 
+This plugin and all code contained is Copyright 2014 [exponde](www.exponde.com), Germany. You are granted a license to use this code / software as you wish, free of charge and free of restrictions under the MIT license
 
 This project is updated and maintained by:
 MattOpen http://www.mattopen.com
