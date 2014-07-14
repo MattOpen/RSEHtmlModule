@@ -1,8 +1,10 @@
-/****** Object:  StoredProcedure [dbo].[RSEprocGetModuleSettings]    Script Date: 06/25/2014 19:09:07 ******/
+/****** Object:  StoredProcedure [dbo].[RSEprocGetModuleSettings]    Script Date: 07/14/2014 19:36:49 ******/
 SET ANSI_NULLS ON
 GO
+
 SET QUOTED_IDENTIFIER ON
 GO
+
 CREATE proc [dbo].[RSEprocGetModuleSettings] 
 (	
 	@UserID as NVARCHAR(MAX), 
@@ -82,6 +84,25 @@ INSERT INTO [dbo].[RSEModuleSettings]
            ,NULL
            ,'en-US')
            
+INSERT INTO [dbo].[RSEModuleSettings]
+           ([IPAddress]
+           ,[CreatedByUserID]
+           ,[LastModifiedByUserID]
+           ,[PortalID]
+           ,[SettingName]
+           ,[SettingValue]
+           ,[SettingDescription]
+           ,[CultureCode])
+     VALUES
+           (NULL
+           ,'1'
+           ,'1'
+           ,@PortalID
+           ,'editarticle'
+           ,'Article'
+           ,NULL
+           ,'en-US')
+           
 getvalues:
 
 
@@ -94,7 +115,7 @@ DECLARE
 	@cols AS NVARCHAR(MAX),
     @query  AS NVARCHAR(MAX);
     
---ENABLE FOR TEST ONLY
+--ENABLE FOR TEST PURPOSES ONLY
 /*declare
     @PortalID as NVARCHAR(MAX),
     @UserID as NVARCHAR(MAX);
@@ -151,3 +172,6 @@ execute(@query)
 
 endsave:
 END
+
+GO
+

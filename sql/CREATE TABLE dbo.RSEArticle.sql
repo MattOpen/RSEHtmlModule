@@ -58,7 +58,4 @@ GO
 ALTER TABLE [dbo].[RSEArticle] ADD  CONSTRAINT [DF_RSEArticle_IsActive]  DEFAULT ((1)) FOR [IsActive]
 GO
 
-ALTER TABLE [dbo].[RSEArticle] ADD  CONSTRAINT [DF_RSEArticle_BaseName]  DEFAULT ('....') FOR [BaseName]
-GO
-
 
