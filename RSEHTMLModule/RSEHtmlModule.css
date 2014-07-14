@@ -40,6 +40,7 @@ ul.nav-profile li{
 ul.nav-profile {
     border-right: 1px solid #DFDFDF;
     margin-left: 0;
+	box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);
 }
 ul.nav-profile li:hover {
     background-color: #0097CF;
@@ -179,7 +180,7 @@ img {
     text-decoration: none;
 }
 .glyphicon {
-  margin: 3px;
+  /*margin: 3px;*/
 }
 /* ******               BOOTSTRAP OVERRIDES               ******* */
 
@@ -237,6 +238,7 @@ img {
 .editBoxStyle{
     background: none repeat scroll 0 0 #F5F7F7;
     box-shadow: 0 1px 3px 0 #989898;
+	/*box-shadow:0 5px 10px rgba(0, 0, 0, 0.2);*/
     padding: 20px;
     margin-bottom: 20px;
     -webkit-animation: fadein 3.0s; /* Safari and Chrome */
@@ -275,7 +277,6 @@ img {
      to   { opacity: 1; }
  }​
 
-/*---------                 liststyle                       ---------*/
 ul.thumbnails.image_picker_selector{margin-left:-20px;}
 ul.thumbnails.image_picker_selector li .thumbnail.selected {
     background: none repeat scroll 0 0 #0088CC;
@@ -314,6 +315,10 @@ ul.thumbnails.image_picker_selector li .thumbnail.selected {
     -ms-transition-duration: 1.5s;
     -o-transition-duration: 1.5s;
     transition-duration: 1.5s;
+}
+
+#templateTopPane .tab-content{
+    margin-top:20px;
 }
 .templateTopPane{
     -webkit-transition-duration: 1.5s;
@@ -393,4 +398,11 @@ hr{margin-top:10px;padding-top:5px;}
     float: right;
 }
 .messageContainer{}
+
+body .syntaxhighlighter .line {
+    white-space: pre-wrap !important; /* make code wrap */
+}
+pre {
+  width: 100%;
+}
 /*-----------------------	HELPERCLASS  ----------------------------------------*/
