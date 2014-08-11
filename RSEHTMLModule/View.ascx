@@ -3,8 +3,6 @@
 
 <cc1:OpenControl id="ows" resourcekey="Module.Text" runat="server"></cc1:OpenControl>
 
-<link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
-
 <script runat="server">
 	
 </script>
@@ -48,4 +46,4 @@ if (typeof ows != 'undefined'){
 	}
 })();
 </script>
-<script src="/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js"></script>
+

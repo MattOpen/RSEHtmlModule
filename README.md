@@ -7,10 +7,13 @@ RSEHtmlModuleDNN is a DNN html module with content localization, based on Open W
 ##Installation
 * install module "_RSE.RSEHtmlModule_01.xx.x_Install.zip" to dnn
 * install bootstrap 3.x to your skin
-  <script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-  <link rel="stylesheet" type="text/css" href="<%= PortalSettings.HomeDirectory %>bootstrap/css/bootstrap.min.css" />
-* map "RSEHtmlModule.css" to your skin <link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
+    <script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="<%= PortalSettings.HomeDirectory %>bootstrap/css/bootstrap.min.css" />
+* map "RSEHtmlModule.css" and RSEHtmlModule.js to your skin 
+    <link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
+    <script src="/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js" type="text/javascript"></script>
 * install ckeditor for dnn
+  https://dnnckeditor.codeplex.com/wikipage?title=Installation&referringTitle=Documentation
 
 take a look at example skin, how to use css and js.
 
