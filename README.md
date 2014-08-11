@@ -7,11 +7,11 @@ RSEHtmlModuleDNN is a DNN html module with content localization, based on Open W
 ##Installation
 * install module "_RSE.RSEHtmlModule_01.xx.x_Install.zip" to dnn
 * install bootstrap 3.x to your skin
-  &#x3C;script src=&#x22;&#x3C;%= PortalSettings.HomeDirectory %&#x3E;bootstrap/js/bootstrap.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;
-  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;&#x3C;%= PortalSettings.HomeDirectory %&#x3E;bootstrap/css/bootstrap.min.css&#x22; /&#x3E;
+  * &#x3C;script src=&#x22;&#x3C;%= PortalSettings.HomeDirectory %&#x3E;bootstrap/js/bootstrap.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;
+  * &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;&#x3C;%= PortalSettings.HomeDirectory %&#x3E;bootstrap/css/bootstrap.min.css&#x22; /&#x3E;
 * map "RSEHtmlModule.css" and RSEHtmlModule.js to your skin 
-  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css&#x22; /&#x3E;
-  &#x3C;script src=&#x22;/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;
+  * &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css&#x22; /&#x3E;
+  * &#x3C;script src=&#x22;/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;
 * install ckeditor for dnn
   https://dnnckeditor.codeplex.com/wikipage?title=Installation&referringTitle=Documentation
 
