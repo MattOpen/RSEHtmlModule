@@ -79,7 +79,7 @@
         </div><!--/footer-->
 	</div><!--/contentWrapper-->
 </div><!--/siteWrapper-->
-
+<script src="/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js" type="text/javascript"></script>
     	
 	
 	
