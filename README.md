@@ -7,17 +7,17 @@ RSEHtmlModuleDNN is a DNN html module with content localization, based on Open W
 ##Installation
 <p>install RSEHtmlModuleDNN as you usually install modules to your DNN site</p>
 <p>add the bootstrap and RSEHtmlModule css-files to the head of your site</p>
-<div class="highlight highlight-html">
+```html
+<link rel="stylesheet" type="text/css" href="<%= PortalSettings.HomeDirectory %>bootstrap/css/bootstrap.min.css" />
+ <link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
+```
 <pre>
 <code>
  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;&#x3C;%= PortalSettings.HomeDirectory %&#x3E;bootstrap/css/bootstrap.min.css&#x22; /&#x3E;
  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css&#x22; /&#x3E;
 </code>
-<script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
- <script src="/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js" type="text/javascript"></script>
-
 </pre>
-</div>
+
 <p>add the bootstrap and RSEHtmlModule js-files to the bottom of your site</p>
 check before if bootstrap.js exist and do not load twice!!!
 <pre>
