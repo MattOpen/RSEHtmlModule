@@ -20,17 +20,16 @@ Add the following HTML snippet to the head section of your webpage:
 <link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
 ```
 
-Include the following scripts at the bottom of the body of your webpage:
-check before if bootstrap.js exist and do not load twice!!!
+<p>Include the following scripts at the bottom of the body of your webpage:</p>
+<p>!!!	check before if bootstrap.js exist and do not load twice	!!!</p>
 ```html
 <script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js" type="text/javascript"></script>
 ```
 
 <p>install ckeditor for dnn</p>
-```html
 [CKEditor](https://dnnckeditor.codeplex.com/wikipage?title=Installation&referringTitle=Documentation)
-```
+
 take a look at example skin, how to use.
 
 ##updates and version
