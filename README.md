@@ -29,7 +29,7 @@ check before if bootstrap.js exist and do not load twice!!!
 
 <p>install ckeditor for dnn</p>
 ```html
-https://dnnckeditor.codeplex.com/wikipage?title=Installation&referringTitle=Documentation
+[CKEditor](https://dnnckeditor.codeplex.com/wikipage?title=Installation&referringTitle=Documentation)
 ```
 take a look at example skin, how to use.
 
@@ -47,9 +47,9 @@ take a look at example skin, how to use.
 
 
 ##Dependencies
-* [DNN] http://www.dnnsoftware.com/ evoq content (formerly DotNetNUke)
-* [OWS] http://www.openwebstudio.com/ build with OpenWebStudio for DNN
-* [CKEditor] https://dnnckeditor.codeplex.com/
+* [DNN](http://www.dnnsoftware.com/) evoq content (formerly DotNetNUke)
+* [OWS](http://www.openwebstudio.com/) build with OpenWebStudio for DNN
+* [CKEditor](https://dnnckeditor.codeplex.com/)
 * [jQuery](https://jquery.com/) v. 1.9.0+
 * [Bootstrap](http://getbootstrap.com/) v. 3.0.0+
 * requires jquery-ui 1.8.16 or higher
