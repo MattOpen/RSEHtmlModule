@@ -170,3 +170,8 @@ IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RSEUs
 DROP TABLE [dbo].[RSEUserSettings]
 GO
 
+/****** Object:  StoredProcedure [dbo].[RSEQueryFocusID]    Script Date: 10/01/2014 16:50:43 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RSEQueryFocusID]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[RSEQueryFocusID]
+GO
+

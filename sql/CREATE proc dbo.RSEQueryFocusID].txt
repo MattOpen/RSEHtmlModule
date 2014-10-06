@@ -1,0 +1,68 @@
+/****** Object:  StoredProcedure [dbo].[RSEQueryFocusID]    Script Date: 10/01/2014 17:10:38 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE proc [dbo].[RSEQueryFocusID] 
+(	
+	@UserID int, 
+	@PortalID int
+)
+as
+BEGIN
+/*****
+*	liefert Standardwerte
+*
+*****/
+declare @externDB varchar(200)
+declare @externnameDB varchar(200)
+DECLARE @IntVariable INT
+DECLARE @SQLString NVARCHAR(500)
+DECLARE @ParmDefinition NVARCHAR(500)
+DECLARE @defaultlanguage NVARCHAR(10)
+set @externDB = (select TOP 1 cDescription from RSEConfig where PortalID = @PortalID and CType = 'externDB' )
+set @externnameDB = (select TOP 1 cDescription from RSEConfig where PortalID = @PortalID and CType = 'externnameDB' )
+--set @defaultlanguage = (select TOP 1 cDescription from RSEConfig where PortalID = @PortalID and CType = 'externnameDB' )
+set @defaultlanguage = ISNULL((select top 1 cname from RSEConfig where PortalID = @PortalID and CType = 'MasterLanguage'),'de-DE')
+
+IF @UserID ='' or @UserID IS NULL or cast(@UserID as varchar) = -1 set @UserID= 0
+IF @UserID not in (select UserID from dbo.RSEShopUser)
+	BEGIN
+		insert into dbo.RSEShopUser (UserID,PortalID) values(@UserID,@PortalID)
+	END
+
+/*
+SET @SQLString = N'select ISNULL(FocusCompID,0) FocusCompID, ISNULL(FocusProdID,0) FocusProdID, ISNULL(FocusProgID,0) FocusProgID,'+''''+@externDB+''''+ ' externDB'+','+''''+@externnameDB+''''+ ' externnameDB'+','+''''+@defaultlanguage+''''+ ' defaultlanguage 
+	
+	FROM dbo.RSEShopUser 
+	where UserID= '+ cast(@UserID as varchar)
+
+/* Specify the parameter format one time. */
+SET @ParmDefinition = N'@UserID int'
+set @IntVariable = @UserID
+--FROM '+@externDB+ 'RSEUser 
+--select @SQLString
+exec SP_executesql @SQLString, @ParmDefinition,@UserID = @IntVariable
+*/
+
+--NEU: seit die [RSEQueryFocusID] in der MasterDNNDB liegt, gilt:
+select 
+	ISNULL(FocusCompID,0) FocusCompID,
+	ISNULL(FocusProdID,0) FocusProdID, 
+	ISNULL(FocusProgID,0) FocusProgID,
+	ISNULL(FocusArticleID,0) FocusArticleID,
+	@externDB externDB,
+	@externnameDB externnameDB,
+	@defaultlanguage defaultlanguage,
+	(select top 1 cvalue from RSEConfig where PortalID = @PortalID and CType = 'onebrickwidth') as onebrickwidth 
+	
+	FROM dbo.RSEShopUser 
+	where UserID= @UserID
+
+END
+
+GO
+
+
