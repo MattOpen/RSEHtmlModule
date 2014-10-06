@@ -7,14 +7,19 @@ RSEHtmlModuleDNN is a DNN html module with content localization, based on Open W
 ##Installation
 <p>install RSEHtmlModuleDNN as you usually install modules to your DNN site</p>
 <p>add the bootstrap and RSEHtmlModule css-files to the head of your site</p>
+<div class="highlight highlight-html">
 <pre>
 <code>
  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;&#x3C;%= PortalSettings.HomeDirectory %&#x3E;bootstrap/css/bootstrap.min.css&#x22; /&#x3E;
  &#x3C;link rel=&#x22;stylesheet&#x22; type=&#x22;text/css&#x22; href=&#x22;/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css&#x22; /&#x3E;
 </code>
-</pre>
+<script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+ <script src="/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js" type="text/javascript"></script>
 
+</pre>
+</div>
 <p>add the bootstrap and RSEHtmlModule js-files to the bottom of your site</p>
+check before if bootstrap.js exist and do not load twice!!!
 <pre>
 <code>
  &#x3C;script src=&#x22;&#x3C;%= PortalSettings.HomeDirectory %&#x3E;bootstrap/js/bootstrap.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;
@@ -33,6 +38,13 @@ RSEHtmlModuleDNN is a DNN html module with content localization, based on Open W
 take a look at example skin, how to use.
 
 ##updates and version
+###version 1.0.13 
+* add new procedure RSEQueryFocusID. Edit item was not possible. 
+* syntax error in script update headline 
+* check sql version and add script 
+* update copy ModuleName script 
+* add class moHtmlModule to outer div 
+* check if div headline exist before add new headlinetext (module crash if not exist)
 ###v 1.0.11
 * can´t edit new item - open
 
