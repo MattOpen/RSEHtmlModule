@@ -13,7 +13,7 @@
 
 <script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="<%= PortalSettings.HomeDirectory %>bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
+<link rel="stylesheet" type="text/css" href="/DesktopModules/MattOpen/moDnnArticle/moDnnArticle.css" />
 
 <div id="siteWrapper">
     <div id="userControls" class="wrapper">
@@ -81,7 +81,7 @@
 </div><!--/siteWrapper-->
 <!--<script src="/Providers/HtmlEditorProviders/CKEditor/ckeditor.js" type="text/javascript"></script>
 <script src="/Providers/HtmlEditorProviders/CKEditor/js/jquery.ckeditor.adapter.js" type="text/javascript"></script>-->
-<script src="/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js" type="text/javascript"></script>
+<script src="/DesktopModules/MattOpen/moDnnArticle/js/moDnnArticle.js" type="text/javascript"></script>
     	
 	
 	
