@@ -1,4 +1,4 @@
-#DNN EVOQ Html Module
+#moDnnArticle
 
 - [Description](#description)
 - [Installation](#installation)
@@ -7,24 +7,24 @@
 - [License](#license)
 
 ##Description
-RSEHtmlModuleDNN is a DNN html multi-language module with content localization, based on Open Web Studio and DotNetNuke 7 - MIT licensed.
+moDnnArticle is a DNN - EVOQ html multi-language module with content localization, based on Open Web Studio and DotNetNuke 7 - MIT licensed.
 
 ##Features
 
 
 ##Installation
-<p>install RSEHtmlModuleDNN as you usually install modules to your DNN site</p>
+<p>install moDnnArticle as you usually install modules to your DNN site</p>
 Add the following HTML snippet to the head section of your webpage:
 ```html
 <link rel="stylesheet" type="text/css" href="<%= PortalSettings.HomeDirectory %>bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/DesktopModules/RSE/RSEHtmlModule/RSEHtmlModule.css" />
+<link rel="stylesheet" type="text/css" href="/DesktopModules/MattOpen/moDnnArticle/moDnnArticle.css" />
 ```
 
 <p>Include the following scripts at the bottom of the body of your webpage:</p>
 <p>!!!	check before if bootstrap.js exist and do not load twice	!!!</p>
 ```html
 <script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="/DesktopModules/RSE/RSEHtmlModule/js/RSEHtmlModule.js" type="text/javascript"></script>
+<script src="/DesktopModules/MattOpen/moDnnArticle/js/moDnnArticle.js" type="text/javascript"></script>
 ```
 
 <p>install ckeditor for dnn</p>
@@ -33,6 +33,10 @@ Add the following HTML snippet to the head section of your webpage:
 take a look at example skin, how to use.
 
 ##updates and version
+###version 1.1.02
+* minor bugfix
+* rename the module from RSEHtmlModule to moDnnArticle 
+
 ###version 1.0.13 
 * add new procedure RSEQueryFocusID. Edit item was not possible. 
 * syntax error in script update headline 
@@ -41,7 +45,7 @@ take a look at example skin, how to use.
 * add class moHtmlModule to outer div 
 * check if div headline exist before add new headlinetext (module crash if not exist)
 
-###v 1.0.11
+###version 1.0.11
 * can´t edit new item - close
 
 
