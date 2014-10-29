@@ -35,7 +35,7 @@ take a look at example skin, how to use.
 ##Configuration CK-Editor
 <p>CKEditor settings can also be configured by using the ckeditor_config.js file. To change CKEditor configuration, add the settings that you want to modify to the ckeditor_config.js, find here:</p>
 ```html
-/DesktopModules/RSE/RSEHtmlModule/js/ckeditor_config.js
+/DesktopModules/MattOpen/moDnnArticle/js/ckeditor_config.js
 ```
 for more information look at [CK-EDITOR.config](http://docs.ckeditor.com/#!/api/CKEDITOR.config-cfg-customConfig)
 
