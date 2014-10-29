@@ -33,6 +33,10 @@ Add the following HTML snippet to the head section of your webpage:
 take a look at example skin, how to use.
 
 ##updates and version
+###version 1.1.03
+* enhance systemmessages
+
+
 ###version 1.1.02
 * minor bugfix
 * rename the module from RSEHtmlModule to moDnnArticle 
