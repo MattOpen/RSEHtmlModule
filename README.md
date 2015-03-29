@@ -41,10 +41,13 @@ for more information look at [CK-EDITOR.config](http://docs.ckeditor.com/#!/api/
 
 
 ##updates and version
+###version 1.1.06
+* some bugfix
+* some changes in css and styling
+
 ###version 1.1.03
 * enhance systemmessages
 * add path to ckeditor_config.js - customize ck-editor to your needs.
-
 
 ###version 1.1.02
 * minor bugfix
