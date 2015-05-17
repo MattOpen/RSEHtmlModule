@@ -1,17 +1,14 @@
 #moDnnArticle
 
-- [Description](#description)
+- [Project homepage](http://www.mattopen.com/Projekte/moTimeline)
 - [Installation](#installation)
 - [Requirements](#dependencies)
-- [Demo](#demo)
-- [License](#license)
+- [Demo sites](#demo)
+- [License(MIT)](#license)
 
 ##Description
 moDnnArticle is a DNN - EVOQ html multi-language module with content localization, based on Open Web Studio and DotNetNuke 7 - MIT licensed.
 We use bootstrap for some reason and for my opinion, bootstrap is the best framework, so it will be necessary to implement bootstrap JS and CSS within your skin.
-
-##Features
-
 
 ##Installation
 <p>install moDnnArticle as you usually install modules to your DNN site</p>
@@ -82,12 +79,13 @@ remove these link`s from your skin if you use an older version of moDnnArticle. 
 
 ##Demo
 Example websites, build with 
+* http://www.mattopen.com
 * http://www.duritcast.de
 * http://www.duritsteel.de
 
 ##License
 Released under the [MIT license](http://www.opensource.org/licenses/MIT).
-This plugin and all code contained is Copyright 2014 <a href="http://www.exponde.com" >exponde</a>, Germany. You are granted a license to use this code / software as you wish, free of charge and free of restrictions under the MIT license
+This plugin and all code contained is Copyright 2015 <a href="http://www.exponde.com" >exponde</a>, Germany. You are granted a license to use this code / software as you wish, free of charge and free of restrictions under the MIT license
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
