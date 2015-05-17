@@ -8,29 +8,28 @@
 
 ##Description
 moDnnArticle is a DNN - EVOQ html multi-language module with content localization, based on Open Web Studio and DotNetNuke 7 - MIT licensed.
+We use bootstrap for some reason and for my opinion, bootstrap is the best framework, so it will be necessary to implement bootstrap JS and CSS within your skin.
 
 ##Features
 
 
 ##Installation
 <p>install moDnnArticle as you usually install modules to your DNN site</p>
-Add the following HTML snippet to the head section of your webpage:
+Add the following HTML snippet to the head section of your webpage and copy the bootstrap folder to your skin:
 ```html
 <link rel="stylesheet" type="text/css" href="<%= PortalSettings.HomeDirectory %>bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/DesktopModules/MattOpen/moDnnArticle/moDnnArticle.css" />
 ```
 
-<p>Include the following scripts at the bottom of the body of your webpage:</p>
+<p>Include the following scripts at the bottom of your skin</p>
 <p>!!!	check before if bootstrap.js exist and do not load twice	!!!</p>
 ```html
 <script src="<%= PortalSettings.HomeDirectory %>bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="/DesktopModules/MattOpen/moDnnArticle/js/moDnnArticle.js" type="text/javascript"></script>
 ```
 
 <p>install ckeditor for dnn</p>
 [CKEditor](https://dnnckeditor.codeplex.com/wikipage?title=Installation&referringTitle=Documentation)
 
-take a look at example skin, how to use.
+take a look at example skin how to use.
 
 ##Configuration CK-Editor
 <p>CKEditor settings can also be configured by using the ckeditor_config.js file. To change CKEditor configuration, add the settings that you want to modify to the ckeditor_config.js, find here:</p>
@@ -41,6 +40,13 @@ for more information look at [CK-EDITOR.config](http://docs.ckeditor.com/#!/api/
 
 
 ##updates and version
+###version 1.2.0
+remove these link`s from your skin if you use an older version of moDnnArticle. Since Version 1.2.0 the moDnnArticle.css and the moDnnArticle.js will be load automatically.
+```html
+<link rel="stylesheet" type="text/css" href="/DesktopModules/MattOpen/moDnnArticle/moDnnArticle.css" />
+<script src="/DesktopModules/MattOpen/moDnnArticle/js/moDnnArticle.js" type="text/javascript"></script>
+```
+
 ###version 1.1.06
 * some bugfix
 * some changes in css and styling
