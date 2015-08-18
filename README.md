@@ -37,6 +37,16 @@ for more information look at [CK-EDITOR.config](http://docs.ckeditor.com/#!/api/
 
 
 ##updates and version
+###version 1.2.5
+* change button, logic and functionality
+* prevent load css twice
+* prevent load js twice
+* change some css
+
+###version 1.2.1
+* SEO enhancement:
+* Content will be rendered without javascript enabled. Now google results will be better
+
 ###version 1.2.0
 remove these link`s from your skin if you use an older version of moDnnArticle. Since Version 1.2.0 the moDnnArticle.css and the moDnnArticle.js will be load automatically.
 ```html
