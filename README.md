@@ -37,6 +37,26 @@ for more information look at [CK-EDITOR.config](http://docs.ckeditor.com/#!/api/
 
 
 ##updates and version
+###version 1.2.6
+* change css-js load management in view.ascx
+* change some css
+* Add bootstrap.min.css to to editor window
+* Add skin.css to to editor window in this way "portals/[...]/skins/[..skinname..]/skin.css. 
+* Now you have WYSIWYG inside editor.
+```html
+config.contentsCss = ['/DesktopModules/MattOpen/moDnnArticle/css/bootstrap.min.css', SkinPath+'skin.css'];
+For some reason I could not get SkinPath to work inside the module view.ascx.
+Add the following to your skin, so that the variable SkinPath is filled:
+
+<script type="text/javascript">
+     $(function () {
+		  HomeDirectory = '<%= PortalSettings.HomeDirectory %>';
+		  SkinPath = '<%= SkinPath %>';
+     });
+</script>
+```
+
+
 ###version 1.2.5
 * change button, logic and functionality
 * prevent load css twice
