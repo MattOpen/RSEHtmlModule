@@ -1,5 +1,9 @@
 #moDnnArticle
 
+
+###	THIS PROJECT WILL BE NO LONGER MAINTAINED	###
+
+
 - [Project homepage](http://www.mattopen.com/Projekte/moTimeline)
 - [Installation](#installation)
 - [Requirements](#dependencies)
